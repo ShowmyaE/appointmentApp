@@ -1,0 +1,43 @@
+/* DateTimePicker.css */
+
+/* Container styling */
+.date-time-picker-container {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+.header {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Datepicker input styling */
+.datepicker-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* Datepicker popper styling */
+.datepicker-popper {
+  z-index: 1000;
+}
+
+/* Selected date-time styling */
+.selected-date-time {
+  margin-top: 20px;
+  font-size: 1.1em;
+  color: #555;
+}
+
+

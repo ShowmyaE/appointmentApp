@@ -20,7 +20,7 @@ class bookingDetail extends Component {
     getbookingdata=async()=>{
         // const {bookingData}=this.state
         const jwtToken = Cookies.get('jwt_token')
-        const apiUrl = 'http://localhost:4000/getbookingDetail'
+        const apiUrl = 'https://appointmentback.onrender.com/getbookingDetail'
         const options = {
           method: 'GET',
           headers: {

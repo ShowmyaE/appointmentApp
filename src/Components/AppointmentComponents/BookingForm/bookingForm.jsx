@@ -10,7 +10,7 @@ import { useHistory } from 'react-router-dom';
 const validationSchema = Yup.object({
   name: Yup.string().required('Required'),
   email: Yup.string().email('Invalid email address').required('Required'),
-  phonenumber: Yup.number().min(10, 'Must be at least 10').max(10, 'Must be at least 10'),
+  phonenumber: Yup.number().required('Required'),
   company: Yup.string().required('Required')
 });
 
@@ -33,7 +33,7 @@ function BookingForm() {
           const jwtToken = Cookies.get('jwt_token')
           values.bookingDate = new Date(startDate)
           console.log('Form data submitted:', values, new Date(startDate));
-          const url = 'http://localhost:4000/bookingDetail'
+          const url = 'https://appointmentback.onrender.com/bookingDetail'
           const options = {
             method: 'POST',
             body: JSON.stringify(values),

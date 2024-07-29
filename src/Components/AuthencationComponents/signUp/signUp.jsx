@@ -60,7 +60,7 @@ class signUp extends Component {
         
         if (validator.isEmail(email) ) {
             const userDetails = { email, password: createPassword }
-            const url = 'http://localhost:4000/signUp '
+            const url = 'https://appointmentback.onrender.com/signUp '
             const options = {
                 method: 'POST',
                 body: JSON.stringify(userDetails),

@@ -50,10 +50,10 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={signIn} />
           <Route exact path="/signUp" component={signUp} />
-          <Route exact path="/home" component={Home} />
-          <Route exact path="/book" component={bookingForm} />
-          <Route exact path="/getbook" component={bookingDetail} />
-          <Route exact path="/contactUs" component={ContactUs} />
+          <ProtectedRoute exact path="/home" component={Home} />
+          {/* <Route exact path="/book" component={bookingForm} /> */}
+          <ProtectedRoute exact path="/getbook" component={bookingDetail} />
+          <ProtectedRoute exact path="/contactUs" component={ContactUs} />
           
           <ProtectedRoute exact path="/not-found" component={NotFound}/>
           {/* <RouteProtected exact path="/home" component={Home} />

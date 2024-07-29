@@ -1,5 +1,6 @@
 import { Component } from "react";
 import Cookies from 'js-cookie'
+import Header from "../../Header/header";
 
 class bookingDetail extends Component {
     constructor(props) {
@@ -42,7 +43,9 @@ class bookingDetail extends Component {
     render() {
         const {bookingData} = this.state
         return (
-           <div>{
+           <div>
+            <Header></Header>
+            {
             bookingData.map(eachMovieDetails=>(
 
 <div class="d-grid gap-3">

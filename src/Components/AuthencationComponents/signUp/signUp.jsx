@@ -141,17 +141,7 @@ class signUp extends Component {
                                         onChange={this.onChangeConfirmPassword} />
                                 </InputLabelContainer>
                                 {showPasswordErrorMsg && <ErrorMsg>{errorMsg}</ErrorMsg>}
-                                <CheckBoxLabelContainer>
-                                    <CheckBox
-                                        id="checkbox"
-                                        type="checkbox"
-                                        onChange={this.onChangeShowPassword} />
-                                    <Label darkMode={isDarkTheme} htmlFor="checkbox">
-                                        Show Password
-                                    </Label>
-
-
-                                </CheckBoxLabelContainer>
+                                
                                 <LoginButton type="submit" onClick={this.submitForm}>SignUp</LoginButton>
                                 {showErrorMsg && <ErrorMsg>{errorMsg}</ErrorMsg>}
 

@@ -12,6 +12,7 @@ import signUp from './Components/AuthencationComponents/signUp/signUp'
 import ProtectedRoute from './Components/ProtectedRoute/ProtectedRoute';
 import bookingForm from './Components/AppointmentComponents/BookingForm/bookingForm';
 import bookingDetail from './Components/AppointmentComponents/BookingDetail/bookingdetail';
+import ContactUs from "./Components/ContactUs/contact";
 // import Gaming from './components/Gaming/gaming'
 
 // import NotFound from './components/NotFound/NotFound'
@@ -52,6 +53,7 @@ class App extends Component {
           <Route exact path="/home" component={Home} />
           <Route exact path="/book" component={bookingForm} />
           <Route exact path="/getbook" component={bookingDetail} />
+          <Route exact path="/contactUs" component={ContactUs} />
           
           <ProtectedRoute exact path="/not-found" component={NotFound}/>
           {/* <RouteProtected exact path="/home" component={Home} />

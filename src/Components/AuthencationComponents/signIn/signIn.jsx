@@ -120,17 +120,9 @@ class signIn extends Component {
                                         value={password}
                                         onChange={this.onChangePassword} />
                                 </InputLabelContainer>
-                                <CheckBoxLabelContainer>
-                                    <CheckBox
-                                        id="checkbox"
-                                        type="checkbox"
-                                        onChange={this.onChangeShowPassword} />
-                                    <Label darkMode={isDarkTheme} htmlFor="checkbox">
-                                        Show Password
-                                    </Label>
+                                
 
-
-                                </CheckBoxLabelContainer>
+                               
                                 <LoginButton type="submit" onClick={this.submitForm}>Login</LoginButton>
                                 {showErrorMsg && <ErrorMsg>{errorMsg}</ErrorMsg>}
 

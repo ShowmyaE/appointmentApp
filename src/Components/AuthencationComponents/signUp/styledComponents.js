@@ -4,15 +4,19 @@ export const LoginContainer=styled.div`
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: ${props=>(props.darkMode ? '#181818' : '#f9f9f9')};
+  background-color: blue;
   `
   export const LoginFormContainer=styled.div`
    display: flex;
   flex-direction: column;
   width: 35%;
   min-height: 60vh;
+
   border-radius: 10px;
-  padding: 25px;
+  padding:10px;
+  border:50pxpx;
+margin-bottom:80px;
+  margin-top:80px;
   box-shadow: 0px 0px 1px 1px #ffffff;
   background-color: ${props => (props.darkMode ? '#0f0f0f' : '#ffffff')};
   @media screen and (max-width: 575px) {
